@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.icet.controller.SignInFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.SignInFormController">
+   <children>
+      <AnchorPane prefHeight="520.0" prefWidth="290.0" style="-fx-background-color: #DFE0FA;">
+         <children>
+            <Text layoutX="22.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please login to your accoun" />
+            <Text layoutX="22.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username or Email">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextField layoutX="22.0" layoutY="195.0" prefHeight="30.0" prefWidth="248.0" />
+            <TextField layoutX="22.0" layoutY="259.0" prefHeight="30.0" prefWidth="248.0" />
+            <Text layoutX="22.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#686de0" layoutX="22.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password?">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Text>
+            <Button fx:id="signInBtn" layoutX="22.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #686DE0;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="290.0" prefHeight="520.0" prefWidth="590.0" style="-fx-background-color: #686DE0;" />
+   </children>
 </AnchorPane>
