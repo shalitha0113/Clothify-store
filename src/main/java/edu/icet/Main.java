@@ -14,6 +14,8 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/start_form.fxml"))));
         stage.setResizable(false);
+        stage.setTitle("Clothify Store");
+        stage.centerOnScreen();
         stage.show();
     }
 }

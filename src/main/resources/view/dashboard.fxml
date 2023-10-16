@@ -8,12 +8,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.dashboardController">
    <children>
       <AnchorPane layoutY="40.0" prefHeight="470.0" prefWidth="200.0" style="-fx-background-color: #F6F6F7;">
          <children>
-            <JFXButton fx:id="btnDashboard" layoutX="10.0" layoutY="25.0" prefHeight="22.0" prefWidth="180.0" text="Dashboard">
+            <JFXButton fx:id="btnDashboard" layoutX="10.0" layoutY="25.0" onAction="#dashboardBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Dashboard">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -57,7 +56,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnProducts" layoutX="10.0" layoutY="150.0" prefHeight="22.0" prefWidth="180.0" text="Products">
+            <JFXButton fx:id="btnProducts" layoutX="10.0" layoutY="150.0" onAction="#productBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Products">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -68,7 +67,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnOrders" layoutX="10.0" layoutY="200.0" prefHeight="22.0" prefWidth="180.0" text="Orders">
+            <JFXButton fx:id="btnOrders" layoutX="10.0" layoutY="200.0" onAction="#ordersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Orders">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -79,7 +78,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnCustomer" layoutX="10.0" layoutY="250.0" prefHeight="22.0" prefWidth="180.0" text="Customers">
+            <JFXButton fx:id="btnCustomer" layoutX="10.0" layoutY="250.0" onAction="#customerBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Customers">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -90,7 +89,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnUsers" layoutX="10.0" layoutY="300.0" prefHeight="22.0" prefWidth="180.0" text="Users">
+            <JFXButton fx:id="btnUsers" layoutX="10.0" layoutY="300.0" onAction="#usersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Users">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -101,7 +100,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnStore" layoutX="10.0" layoutY="350.0" prefHeight="22.0" prefWidth="180.0" text="Stores">
+            <JFXButton fx:id="btnStore" layoutX="10.0" layoutY="350.0" onAction="#storesBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Stores">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -151,7 +150,7 @@
             <Text layoutX="10.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peoples" />
             <Text layoutX="10.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" />
             <Text layoutX="10.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" />
-            <JFXButton fx:id="btnSuppliers" layoutX="10.0" layoutY="275.0" prefHeight="22.0" prefWidth="180.0" text="Suppliers">
+            <JFXButton fx:id="btnSuppliers" layoutX="10.0" layoutY="275.0" onAction="#suppliersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Suppliers">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -165,8 +164,8 @@
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #F6F6F7;" />
-      <AnchorPane accessibleHelp="Calculater" accessibleText="Calender" layoutX="200.0" layoutY="40.0" prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: #F6F6F7;" />
-      <Line endX="208.8333282470703" endY="528.6666870117188" layoutX="-10.0" startX="208.8333282470703" startY="-8.040446281433105" style="-fx-opacity: 0.5;" />
+      <AnchorPane fx:id="rootPane" accessibleHelp="Calculater" accessibleText="Calender" layoutX="200.0" layoutY="40.0" prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: #F6F6F7;" />
+      <Line endX="208.83331298828125" endY="520.0" layoutX="-10.0" startX="208.8333282470703" startY="-8.040446281433105" style="-fx-opacity: 0.5;" />
       <Line endX="800.0" endY="40.0" startX="5.086263172415784E-6" startY="40.0" style="-fx-opacity: 0.5;" />
    </children>
 </AnchorPane>
