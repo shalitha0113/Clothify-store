@@ -6,15 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.dashboardController">
    <children>
       <AnchorPane layoutY="40.0" prefHeight="470.0" prefWidth="200.0" style="-fx-background-color: #F6F6F7;">
          <children>
-            <JFXButton fx:id="btnDashboard" layoutX="10.0" layoutY="25.0" onAction="#dashboardBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Dashboard">
+            <JFXButton fx:id="btnDashboard" layoutX="10.0" layoutY="25.0" onAction="#dashboardBtnOnAction" prefHeight="25.0" prefWidth="180.0" text="Dashboard">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -23,9 +22,9 @@
                   <Glow />
                </effect>
             </JFXButton>
-            <JFXButton layoutX="10.0" layoutY="50.0" prefHeight="22.0" prefWidth="180.0" text="Application">
+            <JFXButton fx:id="btnItems" layoutX="10.0" layoutY="70.0" onAction="#btnItemsOnAction" prefHeight="25.0" prefWidth="180.0" text="Items">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -34,9 +33,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton alignment="CENTER_RIGHT" layoutX="40.0" layoutY="75.0" prefHeight="22.0" prefWidth="100.0" text="Calender">
+            <JFXButton fx:id="btnOrders" layoutX="10.0" layoutY="115.0" onAction="#ordersBtnOnAction" prefHeight="25.0" prefWidth="180.0" text="Orders Details">
                <font>
-                  <Font name="System Bold" size="11.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -45,20 +44,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton alignment="CENTER_RIGHT" layoutX="40.0" layoutY="100.0" prefHeight="22.0" prefWidth="100.0" text="Calculator">
+            <JFXButton fx:id="btnCustomer" layoutX="10.0" layoutY="205.0" onAction="#customerBtnOnAction" prefHeight="25.0" prefWidth="180.0" text="Customers">
                <font>
-                  <Font name="System Bold" size="11.0" />
-               </font>
-               <effect>
-                  <Glow level="0.65" />
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXButton fx:id="btnProducts" layoutX="10.0" layoutY="150.0" onAction="#productBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Products">
-               <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -67,9 +55,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnOrders" layoutX="10.0" layoutY="200.0" onAction="#ordersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Orders">
+            <JFXButton fx:id="btnUsers" layoutX="10.0" layoutY="295.0" onAction="#usersBtnOnAction" prefHeight="25.0" prefWidth="180.0" text="Users">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -78,9 +66,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnCustomer" layoutX="10.0" layoutY="250.0" onAction="#customerBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Customers">
+            <JFXButton fx:id="btnSalesReturn" layoutX="10.0" layoutY="340.0" onAction="#btnSalesReturnOnAction" prefHeight="25.0" prefWidth="180.0" text="Sales Return">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -89,9 +77,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnUsers" layoutX="10.0" layoutY="300.0" onAction="#usersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Users">
+            <JFXButton layoutX="10.0" layoutY="385.0" prefHeight="25.0" prefWidth="180.0" text="Sales Report">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -100,9 +88,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnStore" layoutX="10.0" layoutY="350.0" onAction="#storesBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Stores">
+            <JFXButton fx:id="btnSuppliers" layoutX="10.0" layoutY="250.0" onAction="#suppliersBtnOnAction" prefHeight="25.0" prefWidth="180.0" text="Suppliers">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />
@@ -111,48 +99,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="10.0" layoutY="400.0" prefHeight="22.0" prefWidth="180.0" text="Sales Report">
+            <JFXButton fx:id="btnEmployers" layoutX="10.0" layoutY="160.0" onAction="#btnEmployersOnAction" prefHeight="25.0" prefWidth="180.0" text="Employers">
                <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXButton layoutX="10.0" layoutY="425.0" prefHeight="22.0" prefWidth="180.0" text="Inventory Report">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXButton layoutX="10.0" layoutY="450.0" prefHeight="22.0" prefWidth="180.0" text="Customer Report">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <effect>
-                  <Glow />
-               </effect>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main" />
-            <Text layoutX="10.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products" />
-            <Text layoutX="10.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" />
-            <Text layoutX="10.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peoples" />
-            <Text layoutX="10.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" />
-            <Text layoutX="10.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" />
-            <JFXButton fx:id="btnSuppliers" layoutX="10.0" layoutY="275.0" onAction="#suppliersBtnOnAction" prefHeight="22.0" prefWidth="180.0" text="Suppliers">
-               <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <effect>
                   <Glow />

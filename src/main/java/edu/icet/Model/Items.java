@@ -7,10 +7,14 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Products {
-    private String code;
+public class Items {
+    private String itemCode;
+    private String supId;
     private String description;
     private double unitPrice;
     private int qtyHand;
+    private double sellPrice;
+    private double buyPrice;
+    private String categoryId;
 
 }

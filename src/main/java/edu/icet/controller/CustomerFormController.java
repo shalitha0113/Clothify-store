@@ -169,6 +169,7 @@ public class CustomerFormController implements Initializable {
 
     }
 
+
     private void setData(TreeItem<CustomerTm> value) {
         lblCusId.setText(value.getValue().getId());
         txtCusName.setText(value.getValue().getName());

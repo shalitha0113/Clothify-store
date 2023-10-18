@@ -15,6 +15,9 @@ import java.util.ResourceBundle;
 public class dashboardController implements Initializable {
 
     public AnchorPane rootPane;
+    public JFXButton btnItems;
+    public JFXButton btnSalesReturn;
+    public JFXButton btnEmployers;
     @FXML
     private JFXButton btnCustomer;
 
@@ -23,12 +26,6 @@ public class dashboardController implements Initializable {
 
     @FXML
     private JFXButton btnOrders;
-
-    @FXML
-    private JFXButton btnProducts;
-
-    @FXML
-    private JFXButton btnStore;
 
     @FXML
     private JFXButton btnSuppliers;
@@ -56,19 +53,23 @@ public class dashboardController implements Initializable {
 
     }
 
-    @FXML
-    void productBtnOnAction(ActionEvent event) throws IOException {
-        URL resource = this.getClass().getResource("/view/productForm.fxml");
+
+
+
+    public void btnItemsOnAction(ActionEvent actionEvent) {
+        URL resource = this.getClass().getResource("/view/itemForm.fxml");
         assert resource != null;
-        Parent load = (Parent) FXMLLoader.load(resource);
+        Parent load = null;
+        try {
+            load = (Parent) FXMLLoader.load(resource);
+        } catch (IOException e) {
+
+        }
         this.rootPane.getChildren().clear();
         this.rootPane.getChildren().add(load);
-    }
-
-    @FXML
-    void storesBtnOnAction(ActionEvent event) {
 
     }
+
 
     @FXML
     void suppliersBtnOnAction(ActionEvent event) {
@@ -82,6 +83,25 @@ public class dashboardController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
+
+    public void btnSalesReturnOnAction(ActionEvent actionEvent) {
+
+    }
+
+    public void btnEmployersOnAction(ActionEvent actionEvent) {
+        URL resource = this.getClass().getResource("/view/employerForm.fxml");
+        assert resource != null;
+        Parent load = null;
+        try {
+            load = (Parent) FXMLLoader.load(resource);
+        } catch (IOException e) {
+
+        }
+        this.rootPane.getChildren().clear();
+        this.rootPane.getChildren().add(load);
+
 
     }
 }

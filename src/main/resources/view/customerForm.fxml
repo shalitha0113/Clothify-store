@@ -38,7 +38,10 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCusSearch" layoutX="34.0" layoutY="171.0" prefHeight="25.0" prefWidth="168.0" />
+      <JFXTextField fx:id="txtCusSearch" layoutX="40.0" layoutY="173.0" prefHeight="25.0" prefWidth="190.0" promptText="Search">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></JFXTextField>
       <JFXTreeTableView fx:id="tblCustomer" layoutX="18.0" layoutY="215.0" prefHeight="231.0" prefWidth="568.0">
          <columns>
             <TreeTableColumn fx:id="colId" prefWidth="48.0" text="ID" />
@@ -63,7 +66,6 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnCusSearch" layoutX="211.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnCusSearchOnAction" prefHeight="25.0" prefWidth="60.0" text="Search" />
       <Button fx:id="btnCusUpdate" layoutX="440.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnCusUpdateOnAction" prefWidth="60.0" text="Update" />
       <Button fx:id="btnCusSave" layoutX="511.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnCusSaveOnAction" prefWidth="60.0" text="Save" />
       <Button fx:id="btnCusClear" layoutX="380.0" layoutY="173.0" mnemonicParsing="false" onAction="#btnCusClearOnAction" prefWidth="50.0" text="Clear" />
