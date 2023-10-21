@@ -73,6 +73,16 @@ public class dashboardController implements Initializable {
 
     @FXML
     void suppliersBtnOnAction(ActionEvent event) {
+        URL resource = this.getClass().getResource("/view/suppliersForm.fxml");
+        assert resource != null;
+        Parent load = null;
+        try {
+            load = (Parent) FXMLLoader.load(resource);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        this.rootPane.getChildren().clear();
+        this.rootPane.getChildren().add(load);
 
     }
 
