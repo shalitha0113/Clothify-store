@@ -267,6 +267,4 @@ public class CustomerFormController implements Initializable {
         }
 
     }
-
-
 }

@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.employerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
@@ -28,9 +27,9 @@
             <TreeTableColumn fx:id="colEmpDob" prefWidth="100.0" text="DOB" />
             <TreeTableColumn fx:id="colEmpTp" prefWidth="90.0" text="Contact" />
             <TreeTableColumn fx:id="colEmpPosition" text="Position" />
-            <TreeTableColumn fx:id="colEmpBank" text="Bank" />
-            <TreeTableColumn fx:id="colEmpAccNo" prefWidth="110.0" text="Account No" />
-            <TreeTableColumn prefWidth="90.0" text="Option" />
+            <TreeTableColumn fx:id="colEmpAccNo" prefWidth="110.0" text="Bank" />
+            <TreeTableColumn fx:id="colEmpBank" text="Account No" />
+            <TreeTableColumn fx:id="colEmpOption" prefWidth="90.0" text="Option" />
          </columns>
       </JFXTreeTableView>
       <Label layoutX="20.0" layoutY="60.0" text="Employee ID* :">

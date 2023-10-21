@@ -1,5 +1,7 @@
-package edu.icet.Model;
+package edu.icet.Model.tm;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -9,7 +11,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-public class Employer {
+public class EmployerTm extends RecursiveTreeObject<EmployerTm> {
     private String empId;
     private String name;
     private String nic;
@@ -19,4 +21,5 @@ public class Employer {
     private String bankAccountNo;
     private String bank;
     private String contactNo;
+    private JFXButton btn;
 }
