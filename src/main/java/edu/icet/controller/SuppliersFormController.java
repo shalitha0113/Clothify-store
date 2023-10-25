@@ -263,4 +263,23 @@ public class SuppliersFormController implements Initializable {
     public void btnSupClearOnAction(ActionEvent actionEvent) {
         clearField();
     }
+
+    public List<String> getSupplierId() throws SQLException {
+        List<String> ids = new ArrayList<>();
+        ResultSet rst = null;
+        try {
+            rst = DBConnection.getInstance().getConnection().prepareStatement("SELECT * FROM Supplier").executeQuery();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        while (rst.next()) {
+            ids.add(
+                    rst.getString(1)
+            );
+
+        }
+        return ids;
+    }
 }
