@@ -52,7 +52,7 @@ public class ItemFormController implements Initializable {
     public Button btnItemSave;
     public Button btnItemClear;
     public Label lblSupId;
-    public JFXComboBox comItemType;
+    public JFXComboBox<String> comItemType;
     public Label lblItemId;
     public JFXTextField txtItemName;
     public JFXTextField txtSupId;
@@ -83,6 +83,14 @@ public class ItemFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+       setItems(comItemType);
+
+
+    }
+
+    public void setItems(JFXComboBox<String> comItemType) {
+        ObservableList<String> observableList = FXCollections.observableArrayList("Gents","Ladies","Kids");
+        comItemType.setItems(observableList);
     }
 
 

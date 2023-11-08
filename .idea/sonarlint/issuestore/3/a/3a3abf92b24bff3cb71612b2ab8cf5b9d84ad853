@@ -1,0 +1,48 @@
+
+h	java:S112’"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±Çîˆµ1
+h	java:S112”"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±Çîˆµ1
+h	java:S112º"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±Çîˆµ1
+h	java:S112¼"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±Çîˆµ1
+h	java:S112­"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Çîˆµ1
+h	java:S112Ä"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Çîˆµ1
+h	java:S112Æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Çîˆµ1
+h	java:S112Ù"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Çîˆµ1
+h	java:S112Û"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²Çîˆµ1
+K
+java:S3740("/Provide the parametrized type for this generic.(‚öñS8²Çîˆµ1
+u
+java:S1192"XDefine a constant instead of duplicating this literal "Something went wrong..!" 3 times.(›Ö¹~8³Çîˆµ1
+F
+java:S1604å"(Make this anonymous inner class a lambda(¤Áõ´8´Çîˆµ1
+K
+java:S1604â"(Make this anonymous inner class a lambda(ö ÑËúÿÿÿÿ8´Çîˆµ1
+z
+java:S1488è"\Immediately return this expression instead of assigning it to the temporary variable "flag".(‡’’­8µÇîˆµ1
+q
+java:S1104'"TMake lblEmpId a static final constant or non-public and provide accessors if needed.(‘Å½ì8µÇîˆµ1
+t
+java:S1104("XMake colEmpOption a static final constant or non-public and provide accessors if needed.(‚öñS8µÇîˆµ1
+n	java:S101%"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ú˜ëôøÿÿÿÿ8µÇîˆµ1
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Äê¶üÿÿÿÿ8ºû‰µ1
+m
+java:S2095¨"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹³Áá8ºû‰µ1
+m
+java:S2095…"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÌÈªï8ºû‰µ1
+r
+java:S2095Ï"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(›¬¶şøÿÿÿÿ8ÌÈîˆµ1
+c
+java:S2147“"ECombine this catch with the one at line 145, which has the same body.(É®£8ÓÈîˆµ1
+c
+java:S2147»"ECombine this catch with the one at line 185, which has the same body.(É®£8İÈîˆµ1
+c
+java:S2147Å"ECombine this catch with the one at line 323, which has the same body.(É®£8úÈîˆµ1
+c
+java:S2147Ú"ECombine this catch with the one at line 344, which has the same body.(É®£8‡Éîˆµ1
+X
+java:S6397Ò"5Replace this character class by the character itself.(±ïÚ¯ùÿÿÿÿ8‰Éîˆµ1
+V
+java:S1128"4Remove this unused import 'edu.icet.Model.Customer'.(ÇŒ¡úùÿÿÿÿ8œÇÜŠµ1
+V
+java:S1128
+"9Remove this unused import 'edu.icet.Model.tm.CustomerTm'.(­Ù±Ä8œÇÜŠµ1
