@@ -31,33 +31,25 @@ import java.util.function.Predicate;
 
 public class ItemFormController implements Initializable {
 
-    public JFXTreeTableView<CustomerTm> tblCustomer;
-    public TreeTableColumn colId;
-    public TreeTableColumn colName;
-    public TreeTableColumn colAddress;
-    public TreeTableColumn colTp;
-    public TreeTableColumn colEmail;
-    public TreeTableColumn colOption;
-
-    public JFXTextField txtCusEmail;
 
     public JFXTextField txtItemSearch;
+    public JFXTreeTableView tblItems;
+    public TreeTableColumn colId;
+    public TreeTableColumn colName;
     public TreeTableColumn colSupId;
     public TreeTableColumn colType;
     public TreeTableColumn colQtyOnHand;
     public TreeTableColumn colUnitPrice;
+    public TreeTableColumn colOption;
+    public JFXTextField txtItemName;
     public JFXTextField txtItemQty;
     public JFXTextField txtItemUnitPrice;
+    public Label lblItemId;
     public Button btnItemUpdate;
     public Button btnItemSave;
     public Button btnItemClear;
-    public Label lblSupId;
-    public JFXComboBox<String> comItemType;
-    public Label lblItemId;
-    public JFXTextField txtItemName;
-    public JFXTextField txtSupId;
+    public JFXComboBox comItemType;
     public JFXComboBox cmbSupplierId;
-
 
     public void btnItemSaveOnAction(ActionEvent actionEvent) {
 
@@ -71,21 +63,38 @@ public class ItemFormController implements Initializable {
 
 
     private void clearField() {
-        generateId();
-        txtSupId.clear();
-        txtItemName.clear();
-        txtItemQty.clear();
-        txtItemUnitPrice.clear();
-        txtCusEmail.clear();
-        comItemType.setValue(null);
+
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        generateId();
+        setItems(comItemType);
+        loadSuppliersId();
 
-       setItems(comItemType);
 
+    }
 
+    private void loadSuppliersId() {
+        Connection connection=null;
+        try {
+            connection = DBConnection.getInstance().getConnection();
+            PreparedStatement psTm=connection.prepareStatement("SELECT supId FROM supplier");
+            ResultSet resultSet = psTm.executeQuery();
+
+            ObservableList<String> supplierIds=FXCollections.observableArrayList();
+
+            while (resultSet.next()){
+                supplierIds.add(resultSet.getString(1));
+            }
+
+            cmbSupplierId.setItems(supplierIds);
+
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void setItems(JFXComboBox<String> comItemType) {
@@ -131,7 +140,5 @@ public class ItemFormController implements Initializable {
 
     }
 
-    public void loadSuppliersId(ActionEvent actionEvent) {
 
-    }
 }
