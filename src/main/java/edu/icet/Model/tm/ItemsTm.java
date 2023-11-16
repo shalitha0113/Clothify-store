@@ -1,5 +1,6 @@
 package edu.icet.Model.tm;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import lombok.*;
 
@@ -14,5 +15,6 @@ public class ItemsTm  extends RecursiveTreeObject<ItemsTm> {
     private String supId;
     private String itemType;
     private double unitPrice;
-    private int qtyHand;
+    private int qtyOnHand;
+    private JFXButton btn;
 }
