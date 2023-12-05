@@ -114,4 +114,21 @@ public class dashboardController implements Initializable {
 
 
     }
+
+    public void placeOrdersBtnOnAction(ActionEvent event) {
+        URL resource = this.getClass().getResource("/view/placeOrder.fxml");
+        assert resource != null;
+        Parent load = null;
+        try {
+            load = (Parent) FXMLLoader.load(resource);
+        } catch (IOException e) {
+
+        }
+        this.rootPane.getChildren().clear();
+        this.rootPane.getChildren().add(load);
+
+
+
+
+    }
 }

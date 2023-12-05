@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.PlaceOrderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="45.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="220.0" layoutY="8.0" text="Place Order Form" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="52.0" text="Order ID        :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="130.0" layoutY="52.0" text="S001">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="85.0" text="Customer ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="130.0" layoutY="75.0" prefHeight="25.0" prefWidth="84.0" />
+      <Label layoutX="40.0" layoutY="118.0" text="Customer      :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" layoutX="130.0" layoutY="108.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="310.0" layoutY="52.0" text="Item ID           :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemId" layoutX="405.0" layoutY="42.0" prefHeight="25.0" prefWidth="84.0" />
+      <Label layoutX="310.0" layoutY="77.0" text="Description    :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemDescription" layoutX="405.0" layoutY="67.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="310.0" layoutY="102.0" text="Qty On Hand :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="127.0" text="Unit Price       :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="152.0" text="Qty   :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQtyOnHand" layoutX="405.0" layoutY="102.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUnitPrice" layoutX="405.0" layoutY="127.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSearch" layoutX="40.0" layoutY="180.0" prefHeight="25.0" prefWidth="116.0" promptText="Item Id" />
+      <Button layoutX="338.0" layoutY="190.0" mnemonicParsing="false" onAction="#clearButtonOnAction" prefHeight="25.0" prefWidth="55.0" text="Clear" />
+      <Button layoutX="480.0" layoutY="190.0" mnemonicParsing="false" onAction="#addCartButtonOnAction" text="Add to Cart" />
+      <Button layoutX="410.0" layoutY="190.0" mnemonicParsing="false" onAction="#updateButtonOnAction" text="Update" />
+      <JFXTreeTableView fx:id="tblOrders" layoutX="40.0" layoutY="227.0" prefHeight="181.0" prefWidth="523.0">
+         <columns>
+            <TreeTableColumn fx:id="colItemId" prefWidth="61.0" text="Item Id" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="146.0" text="Description" />
+            <TreeTableColumn fx:id="colUnitPrice" prefWidth="83.0" text="Unit Price" />
+            <TreeTableColumn fx:id="colQty" prefWidth="67.0" text="Qty" />
+            <TreeTableColumn fx:id="colAmount" prefWidth="91.0" text="Amount" />
+            <TreeTableColumn fx:id="colOption" prefWidth="74.0" text="Option" />
+         </columns>
+      </JFXTreeTableView>
+      <Button layoutX="447.0" layoutY="421.0" mnemonicParsing="false" onAction="#placeOrderButtonOnAction" prefHeight="32.0" prefWidth="116.0" text="Place Order" />
+      <Label layoutX="40.0" layoutY="426.0" text="Total Amount :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="145.0" layoutY="426.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtQty" layoutX="354.0" layoutY="142.0" prefHeight="25.0" prefWidth="55.0" />
+   </children>
+</AnchorPane>
